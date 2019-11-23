@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proyectoplataformas">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".controller.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Encuentranos"></activity>
+        <activity android:name=".Recompensas" />
+        <activity android:name=".maps.PlusEncuentranos.MapActivityEncuentranos" />
+        <activity android:name=".ui.ActividadHistorial" />
+        <activity android:name=".ui.Notificaciones" />
+        <activity android:name=".Inicio" />
+        <activity android:name=".ui.Service" />
+        <activity android:name=".ui.Login" />
+        <activity android:name=".ui.RegistroUsuario" />
+        <activity android:name=".maps.TrazarRutas" />
+        <activity android:name=".maps.MapActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.ExampleService" />
+        <service
+            android:name=".service.ActivityService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCgkaca0ycAwcMCDJ6d37sHj0_3ew_05bg" />
+    </application>
+
+</manifest>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Inicio">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="413dp"
+        android:layout_height="203dp"
+        android:background="#FF7E00"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/usuario_icono" />
+
+        <TextView
+            android:id="@+id/idNotificacion"
+            android:layout_width="128dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="144dp"
+            android:text="Usuario"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="510dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btIniciarRecorrido"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FF7E00"
+                android:backgroundTintMode="add"
+                android:drawableLeft="@drawable/flag"
+                android:paddingLeft="10dp"
+                android:text="Iniciar Recorrido"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff8814"
+                android:drawableLeft="@drawable/historial_icon"
+                android:paddingLeft="10dp"
+                android:text="Historial"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btRecompensas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff9227"
+                android:drawableLeft="@drawable/regalo_icon"
+                android:paddingLeft="15dp"
+                android:text="Recompensas"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btNotificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#ff9c3b"
+                android:drawableLeft="@drawable/campana_icon"
+                android:drawablePadding="8dp"
+                android:paddingLeft="15dp"
+                android:text="Notificaciones"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btEncuentranos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffa64e"
+                android:drawableLeft="@drawable/flag"
+                android:paddingLeft="10dp"
+                android:text="Encuentranos"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btSalir"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F7AF69"
+                android:drawableLeft="@drawable/salir_icon"
+                android:paddingLeft="10dp"
+                android:text="Salir"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

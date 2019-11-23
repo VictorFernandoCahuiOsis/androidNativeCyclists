@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "24036903517",
+    "firebase_url": "https://notificacionesdnpa.firebaseio.com",
+    "project_id": "notificacionesdnpa",
+    "storage_bucket": "notificacionesdnpa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24036903517:android:78feae6b48659954",
+        "android_client_info": {
+          "package_name": "com.example.proyectoplataformas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24036903517-d6ldr3g4h9ljkcangf2hqdp30jk2vpfv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectoplataformas",
+            "certificate_hash": "d5ed1276194a4423df4ebe14b57827c568409f8d"
+          }
+        },
+        {
+          "client_id": "24036903517-1bf07td3052m9qukdg21quk9nhqrigkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3IsXXReFN9UvIiACmJ4OtnnMyf2us8FI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24036903517-1bf07td3052m9qukdg21quk9nhqrigkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
